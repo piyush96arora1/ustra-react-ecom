@@ -27,11 +27,12 @@ export function* fetchCategoriesAsync() {
 
   export function* fetchProduct(payload:any) {
     try{
+      if(payload.payload!='backdropClick'){
     const {data}= yield call(UstraService.getProduct,payload);
     yield put({
       type: "FETCH_PRODUCT",
       payload: { products:data.products,id:payload.payload }
-    });
+    });}
   }
   catch(error)
   {
