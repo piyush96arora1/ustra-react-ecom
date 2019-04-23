@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ustra-react-ecom/precache-manifest.a1153c3b9a34c21a25611886640ffcd6.js"
+  "/https://github.com/piyush96arora1/ustra-react-ecom/precache-manifest.a209b2d3e1c8075292e7f8867c4179d2.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ustra-react-ecom/index.html", {
+workbox.routing.registerNavigationRoute("/https://github.com/piyush96arora1/ustra-react-ecom/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
