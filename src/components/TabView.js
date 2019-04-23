@@ -4,23 +4,17 @@ import Tab from '@material-ui/core/Tab';
 import {connect} from 'react-redux'
 
  class TabView extends React.Component{
-   constructor(props){
-     super(props)
-     this.state={value:'197'}
-   }
+ 
 onTabChange=(event,value)=>{
   this.props.fetchProduct(value)
-  this.setState({value})
-
-
 }
     render(){
        
-        let tabs=this.props.state.categories.map((x)=><Tab value={x.category_id}  label={x.category_name}/>)
+        let tabs=this.props.state.categories.map((x)=><Tab key={x.category_id}value={x.category_id}  label={x.category_name}/>)
         return(<React.Fragment>
 
             <Tabs
-            value={this.state.value}
+            value={this.props.state.selectedTab}
             onChange={this.onTabChange}
             indicatorColor="primary"
             textColor="primary"

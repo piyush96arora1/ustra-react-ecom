@@ -1,7 +1,7 @@
 export const Style = {
 
     RootCard: {
-        minHeight: `11rem`,
+       
         borderRadius: `0.3rem`,
         margin:`0.3rem`
     },
@@ -20,5 +20,13 @@ export const Style = {
     MRP:{
         textDecoration:`line-through`,
         color:`grey`
+    },
+    ViewButton:{
+        color:`#157ebc`,
+        border:`1px solid #157ebc`
+    },
+    Btns:{
+        color:`grey`,
+        textTransform:`lowercase`
     }
 }

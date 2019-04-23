@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "@material-ui/core";
-import { ProductCard } from "./components/ProdcutCard";
 
 import { connect } from "react-redux";
 import TabView from "./components/TabView";

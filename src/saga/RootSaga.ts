@@ -19,11 +19,10 @@ export function* fetchCategoriesAsync() {
   }
 
   export function* fetchProduct(payload:any) {
-    
     const {data}= yield call(UstraService.getProduct,payload);
     yield put({
       type: "FETCH_PRODUCT",
-      payload: { products:data.products }
+      payload: { products:data.products,id:payload.payload }
     });
     
   }
