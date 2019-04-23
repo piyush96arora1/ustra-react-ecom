@@ -10,7 +10,8 @@ export interface DefaultState {
   products: Product[];
   viewMoreClicked: boolean;
   selectedTab: string;
-  fetched:boolean
+  fetched:boolean;
+  hasError:boolean
 }
 const intialState: DefaultState = {
   categories: [],
@@ -18,7 +19,8 @@ const intialState: DefaultState = {
   products: [],
   viewMoreClicked: false,
   selectedTab: "197",
-  fetched:false
+  fetched:false,
+  hasError:false
 };
 
 export const RootReducer = (state = intialState, action: Action) => {
@@ -52,6 +54,10 @@ export const RootReducer = (state = intialState, action: Action) => {
       let current = !newState.viewMoreClicked;
       newState = { ...newState, viewMoreClicked: current };
       break;
+    }
+
+    case "ERROR_ERR":{
+      newState={...newState,hasError:true}
     }
 
   }

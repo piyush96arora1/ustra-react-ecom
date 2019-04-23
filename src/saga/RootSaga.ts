@@ -10,6 +10,7 @@ export function* fetchCategoriesAsync() {
   }
   
   export function* fetchCategories() {
+    try{
     const {data}= yield call(UstraService.getCategories);
    
     yield put({
@@ -17,14 +18,23 @@ export function* fetchCategoriesAsync() {
       payload: { categories:data }
     });
   }
+  catch(error)
+  {
+    yield put({type:"ERROR_ERR"})
+  }
+  }
 
   export function* fetchProduct(payload:any) {
-    if(payload.payload!='backdropClick')
-    {    const {data}= yield call(UstraService.getProduct,payload);
+    try{
+    const {data}= yield call(UstraService.getProduct,payload);
     yield put({
       type: "FETCH_PRODUCT",
-      payload: { products:data.products,id:payload.payload }
+      payload: { products:data.products }
     });
+  }
+  catch(error)
+  {
+    yield put({type:"ERROR_ERR"})
   }
   }
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 
-
 import { connect } from "react-redux";
 import TabView from "./components/TabView";
 import ProductCardProvider from "./components/ProductCardProvider";
@@ -12,13 +11,19 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="layout-column layout-align-space-between-none">
-        {this.props.state.categories && <TabView />}
+    let content;
+    if (this.props.state.hasError) {
+      content = <div>UNABLE TO CONNECT</div>;
+    } else {
+      content = (
+        <div className="layout-column layout-align-space-between-none">
+          {this.props.state.categories && <TabView />}
 
-        {this.props.state.categories  && <ProductCardProvider />}
-      </div>
-    );
+          {this.props.state.categories && <ProductCardProvider />}
+        </div>
+      );
+    }
+    return <React.Fragment> {content}</React.Fragment>;
   }
 }
 
