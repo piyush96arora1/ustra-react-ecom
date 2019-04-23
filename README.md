@@ -1,7 +1,7 @@
 This project is currently under development.
-It used ReactJs,Redux, Redux-Saga
+It uses ReactJs,Redux, Redux-Saga
 
-
+Project Hosted at: https://piyush96arora1.github.io/ustra-react-ecom/
 
 ## Available Scripts
 
