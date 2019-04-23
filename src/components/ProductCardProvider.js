@@ -80,7 +80,7 @@ class ProductCardProvider extends React.Component {
 
             <div />
           </div>
-          <div className="hide-gt-xs">
+          <div className="">
            {this.props.state.fetched && <AppBar color="default" position="static">
               <Grid container spacing={8} justify="space-around">
                 <Grid item>{MenuButton}</Grid>
