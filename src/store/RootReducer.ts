@@ -10,13 +10,15 @@ export interface DefaultState {
   products: Product[];
   viewMoreClicked: boolean;
   selectedTab: string;
+  fetched:boolean
 }
 const intialState: DefaultState = {
   categories: [],
   selectedCategory: "",
   products: [],
   viewMoreClicked: false,
-  selectedTab: "197"
+  selectedTab: "197",
+  fetched:false
 };
 
 export const RootReducer = (state = intialState, action: Action) => {
@@ -28,7 +30,8 @@ export const RootReducer = (state = intialState, action: Action) => {
         categories: action.payload.categories.category_list,
         selectedCategory:
           action.payload.categories.category_list[0].category_name,
-        products: action.payload.categories.product_list.products
+        products: action.payload.categories.product_list.products,
+        fetched:true
       };
       break;
     }
@@ -39,7 +42,8 @@ export const RootReducer = (state = intialState, action: Action) => {
         ...newState,
         products: products,
         viewMoreClicked: false,
-        selectedTab: action.payload.id
+        selectedTab: action.payload.id,
+        fetched:true
       };
       break;
     }

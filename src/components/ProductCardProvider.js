@@ -74,23 +74,24 @@ class ProductCardProvider extends React.Component {
           <div className="layout-row layout-wrap">
             {this.props.state.products && ProductView}
           </div>
-          <div className="flex hide-xs layout-row layout-align-center-center">
-            {ViewMore}
+        
+        <div className="flex hide-xs layout-row layout-align-center-center">
+        {this.props.state.fetched && this.props.state.products.length>3 &&ViewMore}
 
             <div />
           </div>
           <div className="hide-gt-xs">
-            <AppBar color="default" position="static">
+           {this.props.state.fetched && <AppBar color="default" position="static">
               <Grid container spacing={8} justify="space-around">
                 <Grid item>{MenuButton}</Grid>
-                <Grid item onClick={this.onViewMoreClicked}>
+                {this.props.state.products.length>3 && <Grid item onClick={this.onViewMoreClicked}>
                   <Button style={Style.Btns}>
                     {sign}
                     {text}
                   </Button>{" "}
-                </Grid>
+                </Grid>}
               </Grid>
-            </AppBar>
+            </AppBar>}
           </div>
         </div>
       </React.Fragment>

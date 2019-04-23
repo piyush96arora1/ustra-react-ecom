@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
+
 import { connect } from "react-redux";
 import TabView from "./components/TabView";
 import ProductCardProvider from "./components/ProductCardProvider";
@@ -15,7 +16,7 @@ class App extends Component {
       <div className="layout-column layout-align-space-between-none">
         {this.props.state.categories && <TabView />}
 
-        <ProductCardProvider />
+        {this.props.state.categories  && <ProductCardProvider />}
       </div>
     );
   }
