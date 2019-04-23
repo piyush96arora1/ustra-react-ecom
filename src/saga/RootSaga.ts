@@ -17,19 +17,20 @@ export function* fetchCategoriesAsync() {
       type: "FETCH_DATA",
       payload: { categories:data }
     });
+    }
+    catch(error)
+    {
+      yield put({type:"ERROR_ERR"})
+    }
   }
-  catch(error)
-  {
-    yield put({type:"ERROR_ERR"})
-  }
-  }
+
 
   export function* fetchProduct(payload:any) {
     try{
     const {data}= yield call(UstraService.getProduct,payload);
     yield put({
       type: "FETCH_PRODUCT",
-      payload: { products:data.products }
+      payload: { products:data.products,id:payload.payload }
     });
   }
   catch(error)
@@ -43,4 +44,3 @@ export function* fetchCategoriesAsync() {
 export default function* rootSaga() {
     yield all([fetchCategoriesAsync(),fetchProductAync()]);
   }
-  

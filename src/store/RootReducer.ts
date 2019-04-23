@@ -1,3 +1,4 @@
+    
 import { Categ } from "../model/model";
 import { Product } from "../model/model";
 interface Action {
@@ -58,6 +59,7 @@ export const RootReducer = (state = intialState, action: Action) => {
 
     case "ERROR_ERR":{
       newState={...newState,hasError:true}
+      break;
     }
 
   }
