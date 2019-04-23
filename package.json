@@ -1,8 +1,8 @@
 {
   "name": "ustra-react-ecom",
   "version": "0.1.0",
-  "homepage": "https://piyush96arora1.github.io/ustra-react-ecom/",
   "private": true,
+  "homepage": "https://piyush96arora1.github.io/ustra-react-ecom/",
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
