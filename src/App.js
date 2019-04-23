@@ -1,28 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "@material-ui/core";
+import { ProductCard } from "./components/ProdcutCard";
+
+import { connect } from "react-redux";
+import TabView from "./components/TabView";
+import ProductCardProvider from "./components/ProductCardProvider";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchCategories();
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="layout-column layout-align-space-between-none">
+        {this.props.state.categories && <TabView />}
+
+        <ProductCardProvider />
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    state: state
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchCategories: () => dispatch({ type: "FETCH_DATA_ASYNC" })
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
