@@ -25,6 +25,6 @@ Builds the app for production to the `build` folder.<br>
 
                                 Some Screen Shots:
 
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture.PNG)
+![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture1.PNG)
                                 
 
