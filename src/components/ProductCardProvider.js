@@ -45,7 +45,7 @@ class ProductCardProvider extends React.Component {
       </Button>
     );
     let ProductView = products.map(x => (
-      <ProductCard key={Math.random()} product={x} />
+      <ProductCard key={x.orig_url} product={x} />
     ));
     let MenuButton = (
       <span>

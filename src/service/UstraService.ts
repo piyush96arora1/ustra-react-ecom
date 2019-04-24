@@ -26,7 +26,7 @@ interface Products{
 export class UstraService {
   static getProduct=( id:any):AxiosPromise<Products>=> {
    
-    let data:AxiosPromise<Products>=axios.get(`https://backend.ustraa.com/rest/V1/api/catalog/v1.0.1?category_id=${id.payload}`)
+    let data:AxiosPromise<Products>=axios.get(`https://backend.ustraa.com/rest/V1/api/catalog/v1.0.1?category_id=${id}`)
     return data
   }
 

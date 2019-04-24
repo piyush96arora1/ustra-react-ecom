@@ -25,13 +25,14 @@ export function* fetchCategoriesAsync() {
   }
 
 
-  export function* fetchProduct(payload:any) {
+  export function* fetchProduct({type,payload}:any) {
+console.log(payload)
     try{
-      if(payload.payload!='backdropClick'){
+      if(payload!='backdropClick'){
     const {data}= yield call(UstraService.getProduct,payload);
     yield put({
       type: "FETCH_PRODUCT",
-      payload: { products:data.products,id:payload.payload }
+      payload: { products:data.products,id:payload }
     });}
   }
   catch(error)
