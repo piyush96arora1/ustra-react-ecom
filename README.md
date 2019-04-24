@@ -6,8 +6,9 @@ Project Hosted at: https://piyush96arora1.github.io/ustra-react-ecom/
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
