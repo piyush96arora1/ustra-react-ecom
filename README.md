@@ -24,29 +24,29 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br>
 
                                 Some Screen Shots:
-
+### `1`
 ![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture1.PNG)
 
 -------------------------------------------------------------------------------------------------------------
 
-
+### `2`
 ![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture2.PNG)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------                                           
                                         Mobile Screen Shots
-
+### `3`
 ![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture3.PNG)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------  
 
-
+### `4`
 ![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture4.PNG)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------  
 
-
+### `5`
 ![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture5.PNG)
 
