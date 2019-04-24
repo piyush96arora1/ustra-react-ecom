@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/ustra-react-ecom/static/js/runtime~main.f1f178d5.js"
   },
   {
-    "revision": "f53315fa1572514f93a6",
-    "url": "/ustra-react-ecom/static/js/main.ddd6c866.chunk.js"
+    "revision": "fc33e7145f7b4b0af4b3",
+    "url": "/ustra-react-ecom/static/js/main.d8ee5791.chunk.js"
   },
   {
     "revision": "dfacbb5f8f25ca8bf0c6",
     "url": "/ustra-react-ecom/static/js/2.3ad732ee.chunk.js"
   },
   {
-    "revision": "f53315fa1572514f93a6",
+    "revision": "fc33e7145f7b4b0af4b3",
     "url": "/ustra-react-ecom/static/css/main.b871943b.chunk.css"
   },
   {
-    "revision": "51df14bc68d1b7008d996cc5a2b32c11",
+    "revision": "c314e33b6b683f10b6aac7fe6feccf15",
     "url": "/ustra-react-ecom/index.html"
   }
 ];
