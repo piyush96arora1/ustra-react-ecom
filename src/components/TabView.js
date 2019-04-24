@@ -10,7 +10,7 @@ onTabChange=(event,value)=>{
 }
     render(){
        
-        let tabs=this.props.state.categories.map((x)=><Tab key={x.category_id}value={x.category_id}  label={x.category_name}/>)
+        let tabs=this.props.state.categories.map((x)=><Tab sbackgroundImage= {x.category_image} key={x.category_id}value={x.category_id}  label={x.category_name}/>)
         return(<React.Fragment>
 
             <Tabs

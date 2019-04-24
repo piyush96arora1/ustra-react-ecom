@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import { connect } from "react-redux";
+  import { connect } from "react-redux";
 import TabView from "./components/TabView";
 import ProductCardProvider from "./components/ProductCardProvider";
 
@@ -20,6 +20,7 @@ class App extends Component {
           {this.props.state.categories && <TabView />}
 
           {this.props.state.categories && <ProductCardProvider />}
+  
         </div>
       );
     }

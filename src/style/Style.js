@@ -3,23 +3,32 @@ export const Style = {
     RootCard: {
        
         borderRadius: `0.3rem`,
-        margin:`0.3rem`
+        margin:`0.3rem`,
+        fontFamily: 'Clear Sans',
+        
+     
     },
     AddCart:{
             backgroundColor:`#4fcf64`,
             color:`white`,
             fontWeight: `bold`,
+           
     },
 
     OutStock:{
-        backgroundColor:`grey`
+        backgroundColor:`grey`,
+        cursor:`default`,
+        color:`white`,
+        fontWeight: `bold`,
+      
     },
     ProductName:{
         fontWeight: 'bold',
+        textAlign:  'center'
     },
     MRP:{
         textDecoration:`line-through`,
-        color:`grey`
+        color:`grey`,
     },
     ViewButton:{
         color:`#157ebc`,

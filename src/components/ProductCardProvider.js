@@ -71,7 +71,7 @@ class ProductCardProvider extends React.Component {
     return (
       <React.Fragment>
         <div className="layout-column  layout-margin">
-          <div className="layout-row layout-wrap">
+          <div className="layout-row layout-wrap ">
             {this.props.state.products && ProductView}
           </div>
         
