@@ -5,6 +5,7 @@ import { CartButton } from "./CartButton";
 
 export class ProductCard extends React.Component {
   render() {
+    let hidePrice=this.props.product.price==this.props.product.final_price
     let price = (
       <span style={Style.MRP}>
        
@@ -44,10 +45,10 @@ export class ProductCard extends React.Component {
                     <div item xs={6}>
                       {finalPrice}
                     </div>
-                    <div item xs={6}>
+                   {hidePrice?'': <div item xs={6}>
                      
                       {price}
-                    </div>
+                    </div>}
                   </div>
                   <div className="flex layout-row layout-padding  layout-align-center-center">
                     <CartButton available={this.props.product.is_in_stock} />
