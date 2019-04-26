@@ -3,7 +3,7 @@ export const Style = {
     RootCard: {
        
         borderRadius: `0.3rem`,
-        margin:`0.3rem`,
+     
         fontFamily: 'Clear Sans',
         
      
@@ -37,5 +37,16 @@ export const Style = {
     Btns:{
         color:`grey`,
         textTransform:`lowercase`
+    },
+    Tab:{
+        height:`12px`,
+        width:`12px`,
+        border:`1px solid black`
+    },
+    Heading:{
+        fontWeight: 'bold',
+        margin:`1rem`,
+        fontFamily: 'Clear Sans',
+        fontSize:`1rem`
     }
 }

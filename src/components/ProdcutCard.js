@@ -19,10 +19,10 @@ export class ProductCard extends React.Component {
       </span>
     );
     return (
-      <React.Fragment>
-       <div className="flex-lg-33 flex-gt-md-33 flex-xs-100 flex-gt-xs-50 flex-md-50">
+      <React.Fragment >
+       <div className="flex-lg-33 flex-gt-md-33 flex-xs-100 flex-gt-xs-50 flex-md-50 ">
           <Card style={Style.RootCard}>
-            <div className="layout-column layout-xs-row ">
+            <div className="layout-column layout-xs-row">
               <div className="flex flex-xs-50 layout-row layout-align-center-center  ">
                  <div className="flex  hide-gt-xs ">
                   <img src={this.props.product.image_urls.x200} />

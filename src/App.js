@@ -4,6 +4,7 @@ import "./App.css";
   import { connect } from "react-redux";
 import TabView from "./components/TabView";
 import ProductCardProvider from "./components/ProductCardProvider";
+import { Style } from "./style/Style";
 
 class App extends Component {
   componentDidMount() {
@@ -16,7 +17,8 @@ class App extends Component {
       content = <div>UNABLE TO CONNECT</div>;
     } else {
       content = (
-        <div className="layout-column layout-align-space-between-none">
+        <div className="layout-column layout-gt-xs-align-space-between-none  ">
+          <div style={Style.Heading}>Our Products</div>
           {this.props.state.categories && <TabView />}
 
           {this.props.state.categories && <ProductCardProvider />}
