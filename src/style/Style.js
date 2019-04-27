@@ -3,7 +3,6 @@ export const Style = {
     RootCard: {
        
         borderRadius: `0.3rem`,
-     
         fontFamily: 'Clear Sans',
         
      
@@ -24,7 +23,7 @@ export const Style = {
     },
     ProductName:{
         fontWeight: 'bold',
-        textAlign:  'center'
+        fontSize:`14px`
     },
     MRP:{
         textDecoration:`line-through`,
@@ -48,5 +47,9 @@ export const Style = {
         margin:`1rem`,
         fontFamily: 'Clear Sans',
         fontSize:`1rem`
+    }
+    ,
+    FontFamiliy:{
+        fontFamily: 'Clear Sans'
     }
 }

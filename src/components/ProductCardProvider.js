@@ -6,6 +6,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { Style } from "../style/Style";
 import AppBar from "@material-ui/core/AppBar";
+import {ProductContainer} from './emotion-style'
 class ProductCardProvider extends React.Component {
   onViewMoreClicked = () => {
     this.props.onViewMoreClicked();
@@ -49,7 +50,6 @@ class ProductCardProvider extends React.Component {
     ));
     let MenuButton = (
       <span>
-        {" "}
         <Button
           aria-owns={anchorEl ? "simple-menu" : undefined}
           aria-haspopup="true"
@@ -71,9 +71,9 @@ class ProductCardProvider extends React.Component {
     return (
       <React.Fragment>
         <div className="layout-column">
-          <div className="layout-row layout-wrap ">
+          <ProductContainer className="layout-row layout-wrap ">
             {this.props.state.products && ProductView}
-          </div>
+          </ProductContainer>
         
         <div className="flex hide-xs layout-row layout-align-center-center">
         {this.props.state.fetched && this.props.state.products.length>3 &&ViewMore}
@@ -82,13 +82,13 @@ class ProductCardProvider extends React.Component {
           </div>
           <div className="hide-gt-xs">
            {this.props.state.fetched && <AppBar color="default" position="static">
-              <Grid container spacing={8} justify="space-around">
+              <Grid container  justify="space-around">
                 <Grid item>{MenuButton}</Grid>
                 {this.props.state.products.length>3 && <Grid item onClick={this.onViewMoreClicked}>
                   <Button style={Style.Btns}>
                     {sign}
                     {text}
-                  </Button>{" "}
+                  </Button>
                 </Grid>}
               </Grid>
             </AppBar>}

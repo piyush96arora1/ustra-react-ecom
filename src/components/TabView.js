@@ -3,19 +3,19 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import {connect} from 'react-redux'
 import { Style } from '../style/Style';
-import './design.css'
+import {ImageContainer} from './emotion-style'
  class TabView extends React.Component{
  
 onTabChange=(event,value)=>{
   this.props.fetchProduct(value)
 }
 
-tabImage=(prop,name)=>{
+tabImage=(source,name)=>{
   return(
-    <div class="container">
-  <img style={{backgroundSize:'cover',margin:`0.3rem`,borderRadius:`4px` ,backfaceVisibility:`hidden`,backgroundPosition:'center',width:`120px`,height:'65px'}} src={prop}></img>
-  <div style={{fontFamily:`Clear Sans`}}class="centered">{name}</div>
-</div>)
+  <ImageContainer >
+  <img className="image_style" src={source}></img>
+  <div  className="centered">{name}</div>
+</ImageContainer>)
 }
     render(){
       
@@ -40,7 +40,8 @@ tabImage=(prop,name)=>{
             scrollButtons="auto"
           >
          {tabs}
-            {tabsMain}
+
+        {tabsMain}
             
           </Tabs>
         </React.Fragment>)
