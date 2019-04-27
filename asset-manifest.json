@@ -1,13 +1,13 @@
 {
-  "main.css": "/ustra-react-ecom/static/css/main.134f9963.chunk.css",
-  "main.js": "/ustra-react-ecom/static/js/main.99236901.chunk.js",
-  "main.js.map": "/ustra-react-ecom/static/js/main.99236901.chunk.js.map",
+  "main.css": "/ustra-react-ecom/static/css/main.d06731dd.chunk.css",
+  "main.js": "/ustra-react-ecom/static/js/main.7e1d1d9f.chunk.js",
+  "main.js.map": "/ustra-react-ecom/static/js/main.7e1d1d9f.chunk.js.map",
   "runtime~main.js": "/ustra-react-ecom/static/js/runtime~main.f1f178d5.js",
   "runtime~main.js.map": "/ustra-react-ecom/static/js/runtime~main.f1f178d5.js.map",
-  "static/js/2.0a988527.chunk.js": "/ustra-react-ecom/static/js/2.0a988527.chunk.js",
-  "static/js/2.0a988527.chunk.js.map": "/ustra-react-ecom/static/js/2.0a988527.chunk.js.map",
+  "static/js/2.134f8082.chunk.js": "/ustra-react-ecom/static/js/2.134f8082.chunk.js",
+  "static/js/2.134f8082.chunk.js.map": "/ustra-react-ecom/static/js/2.134f8082.chunk.js.map",
   "index.html": "/ustra-react-ecom/index.html",
-  "precache-manifest.e4ed75453a64f412d97f9bf83b2ebc35.js": "/ustra-react-ecom/precache-manifest.e4ed75453a64f412d97f9bf83b2ebc35.js",
+  "precache-manifest.e7cc31174bfba153809ba5dab493713e.js": "/ustra-react-ecom/precache-manifest.e7cc31174bfba153809ba5dab493713e.js",
   "service-worker.js": "/ustra-react-ecom/service-worker.js",
-  "static/css/main.134f9963.chunk.css.map": "/ustra-react-ecom/static/css/main.134f9963.chunk.css.map"
+  "static/css/main.d06731dd.chunk.css.map": "/ustra-react-ecom/static/css/main.d06731dd.chunk.css.map"
 }

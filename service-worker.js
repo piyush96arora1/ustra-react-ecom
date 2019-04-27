@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ustra-react-ecom/precache-manifest.e4ed75453a64f412d97f9bf83b2ebc35.js"
+  "/ustra-react-ecom/precache-manifest.e7cc31174bfba153809ba5dab493713e.js"
 );
 
 workbox.clientsClaim();
