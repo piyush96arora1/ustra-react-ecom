@@ -5,7 +5,7 @@ import { ProductCard } from "./ProdcutCard";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { Style } from "../style/Style";
-import AppBar from "@material-ui/core/AppBar";
+
 import Paper from "@material-ui/core/Paper";
 import {ProductContainer, AppBarContainer} from './emotion-style'
 class ProductCardProvider extends React.Component {
