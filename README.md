@@ -32,18 +32,16 @@ Builds the app for production to the `build` folder.<br>
 
 -------------------------------------------------------------------------------------------------------------------------------------                                           
                                         Mobile Screen Shots
+
+-------------------------------------------------------------------------------------------------------------------------------------  
+
 ### `3`
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture3.PNG)
+
+![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile.PNG)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------  
 
 ### `4`
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture4.PNG)
 
-
--------------------------------------------------------------------------------------------------------------------------------------  
-
-### `5`
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/Capture5.PNG)
-
+![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile2.PNG)
