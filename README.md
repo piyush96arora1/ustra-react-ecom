@@ -37,11 +37,11 @@ Builds the app for production to the `build` folder.<br>
 
 ### `3`
 
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile.PNG)
+![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile.PNG.jpg)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------  
 
 ### `4`
 
-![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile2.PNG)
+![alt text](https://github.com/piyush96arora1/ustra-react-ecom/blob/master/public/mobile2.jpg)
