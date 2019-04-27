@@ -3,6 +3,8 @@ import { Card } from "@material-ui/core";
 import { Style } from "../style/Style";
 import { CartButton } from "./CartButton";
 import { ProductCardContainer } from "./emotion-style";
+import Icon from '@material-ui/core/Icon';
+
 
 export class ProductCard extends React.Component {
   render() {
@@ -39,12 +41,17 @@ export class ProductCard extends React.Component {
               <div className="flex layout-padding flex-xs-80 details_prod">
                 <div className="layout-column">
                   <div className="flex layout-row layout-align-gt-xs-center name_margin">
-                    <div style={Style.ProductName}>
+                    <div className="flex-85" style={Style.ProductName}>
                       {this.props.product.name}
                     </div>
+                  {this.props.product.rating!=0 && this.props.product.rating &&
+                      <div className="flex-15 rating">
+                      {this.props.product.rating}
+                      <Icon className="ratingstar">star</Icon>
+                    </div>}
                   </div>
 
-                  <div className="flex layout-row layout-align-gt-xs-center ">
+                  <div className="flex weight_product layout-row layout-align-gt-xs-center ">
                     {weight ? (
                       <span>
                         ( {weight} {weightUnit} )
@@ -59,7 +66,7 @@ export class ProductCard extends React.Component {
                     {hidePrice ? "" : <div className="">{price}</div>}
                   </div>
                   <div className="flex layout-row  layout-align-gt-xs-center">
-                    <CartButton available={this.props.product.is_in_stock} />
+                    <CartButton  available={this.props.product.is_in_stock} />
                   </div>
                 </div>
               </div>

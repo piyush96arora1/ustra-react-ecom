@@ -4,13 +4,14 @@ export const Style = {
        
         borderRadius: `0.3rem`,
         fontFamily: 'Clear Sans',
-        
+       
      
     },
     AddCart:{
             backgroundColor:`#4fcf64`,
             color:`white`,
             fontWeight: `bold`,
+            minWidth: `145px`
            
     },
 
@@ -19,7 +20,7 @@ export const Style = {
         cursor:`default`,
         color:`white`,
         fontWeight: `bold`,
-      
+        minWidth: `145px`
     },
     ProductName:{
         
@@ -46,7 +47,8 @@ export const Style = {
         fontWeight: 'bold',
         margin:`1rem`,
         fontFamily: 'Clear Sans',
-        fontSize:`1rem`
+        fontSize:`1.2rem`,
+        letterSpacing:`0.4px`
     }
     ,
     FontFamiliy:{

@@ -23,6 +23,7 @@ export const ImageContainer = styled(`div`)`
 `;
 
 export const ProductContainer = styled(`div`)`
+letter-spacing: 0.4px;
   @media only screen and (max-width: 599px) {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -35,6 +36,7 @@ export const AppBarContainer = styled(`span`)`
 `;
 
 export const ProductCardContainer = styled(`div`)`
+letter-spacing: 0.4px;
   .name_margin {
     margin-bottom: 0.5rem;
     text-align: center;
@@ -52,6 +54,7 @@ export const ProductCardContainer = styled(`div`)`
   }
   .margin_design {
     margin-right: 1rem;
+  
   }
   .MRP {
     text-decoration: line-through;
@@ -61,8 +64,20 @@ export const ProductCardContainer = styled(`div`)`
     color: #757575;
   }
   .finalPrice {
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 0.4px;
+  }
+  .weight_product{
+      font-size:0.8rem;
+      color:grey;
+  }
+  .rating{
+    font-size:0.8rem;
+    color:grey;
+  }
+  .ratingstar{
+    font-size:0.7rem;
+    color:grey;
   }
   margin: 0rem;
   @media only screen and (max-width: 599px) {
