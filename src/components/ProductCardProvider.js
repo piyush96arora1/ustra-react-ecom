@@ -6,7 +6,8 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { Style } from "../style/Style";
 import AppBar from "@material-ui/core/AppBar";
-import {ProductContainer} from './emotion-style'
+import Paper from "@material-ui/core/Paper";
+import {ProductContainer, AppBarContainer} from './emotion-style'
 class ProductCardProvider extends React.Component {
   onViewMoreClicked = () => {
     this.props.onViewMoreClicked();
@@ -75,13 +76,13 @@ class ProductCardProvider extends React.Component {
             {this.props.state.products && ProductView}
           </ProductContainer>
         
-        <div className="flex hide-xs layout-row layout-align-center-center">
+        <div style={{marginTop:`1rem`}} className="flex hide-xs layout-row layout-align-center-center">
         {this.props.state.fetched && this.props.state.products.length>3 &&ViewMore}
 
             <div />
           </div>
           <div className="hide-gt-xs">
-           {this.props.state.fetched && <AppBar color="default" position="static">
+           {this.props.state.fetched && <AppBarContainer><Paper color="default" position="static">
               <Grid container  justify="space-around">
                 <Grid item>{MenuButton}</Grid>
                 {this.props.state.products.length>3 && <Grid item onClick={this.onViewMoreClicked}>
@@ -91,7 +92,9 @@ class ProductCardProvider extends React.Component {
                   </Button>
                 </Grid>}
               </Grid>
-            </AppBar>}
+              
+            </Paper>
+            </AppBarContainer>}
           </div>
         </div>
       </React.Fragment>

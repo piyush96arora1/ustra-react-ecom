@@ -13,12 +13,12 @@ export class ProductCard extends React.Component {
     let weightUnit = this.props.product.weight_unit;
     let hidePrice = this.props.product.price == this.props.product.final_price;
     let price = (
-      <span style={Style.MRP}>
+      <span className="MRP">
         <span>₹</span> {this.props.product.price}
       </span>
     );
     let finalPrice = (
-      <span style={Style.ProductName}>
+      <span className="finalPrice">
         <span>₹</span> {this.props.product.final_price}
       </span>
     );
@@ -27,7 +27,7 @@ export class ProductCard extends React.Component {
         <ProductCardContainer className="flex-lg-33 flex-gt-md-33 flex-xs-100 flex-gt-xs-50 flex-md-50  ">
           <Card style={Style.RootCard}>
             <div className="layout-column layout-xs-row">
-              <div className="flex flex-xs-30 layout-row layout-padding layout-align-center-center  ">
+              <div className="flex flex-xs-30 layout-row image layout-align-center-center  ">
                 <div className="flex  hide-gt-xs ">
                   <img src={this.props.product.image_urls.x120} />
                 </div>
@@ -46,7 +46,7 @@ export class ProductCard extends React.Component {
 
                   <div className="flex layout-row layout-align-gt-xs-center ">
                     {weight ? (
-                      <span style={{ color: `grey` }}>
+                      <span>
                         ( {weight} {weightUnit} )
                       </span>
                     ) : <span className="hide-xs" style={{ minHeight: `1rem` }}>

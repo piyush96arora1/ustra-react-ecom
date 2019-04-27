@@ -17,7 +17,7 @@ class App extends Component {
       content = <div>UNABLE TO CONNECT</div>;
     } else {
       content = (
-        <div className="layout-column layout-gt-xs-align-space-between-none  ">
+        <div className="layout-column App layout-gt-xs-align-space-between-none  ">
           <div style={Style.Heading}>Our Products</div>
           {this.props.state.categories && <TabView />}
 

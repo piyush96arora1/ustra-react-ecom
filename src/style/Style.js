@@ -22,7 +22,7 @@ export const Style = {
       
     },
     ProductName:{
-        fontWeight: 'bold',
+        
         fontSize:`14px`
     },
     MRP:{
